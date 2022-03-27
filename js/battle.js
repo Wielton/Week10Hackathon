@@ -44,7 +44,25 @@ You could add a "catch" mechanism that allows you to throw a Pokeball when the e
 //  The pokedex containing all attributes.  The user has selected one of these pokemon.  2nd, 3rd, or mega evolution
 //   can only be achieved by getting to the 3rd, 5th, and 8th stages respectively.  *DEGREES OF EVOLUTION VARY BETWEEN EACH POKEMON
 //                                                                                  *NOT ALL HAVE 3rd EVOLUTION STAGE
+// Retrieve cookies from main page selection
+let userSelection1 = Cookies.get('bulbasaur');
+let userSelection2 = Cookies.get('charmander');
+let userSelection3 = Cookies.get('squirtle');
+let userSelection4 = Cookies.get('caterpie');
+let userSelection5 = Cookies.get('weedle');
+let userSelection6 = Cookies.get('pidgey');
+let userSelection7 = Cookies.get('rattata');
+let userSelection8 = Cookies.get('spearow');
+let userSelection9 = Cookies.get('ekans');
+let userSelection10 = Cookies.get('pikachu');
+let userSelection11 = Cookies.get('sandshrew');
+let userSelection12 = Cookies.get('nidoranf');
+let userSelection13 = Cookies.get('nidoranm');
+let userSelection14 = Cookies.get('vulpix');
+// // Create an array of those cookies
+let cookieArray = [userSelection1, userSelection2, userSelection3, userSelection4, userSelection5, userSelection6, userSelection7, userSelection8, userSelection9, userSelection10, userSelection11, userSelection12, userSelection13, userSelection14];
 
+//-------------------------------------------------------------------
 
 //  Attack and defence paramaters for each evolution stage
 let poke1stEvoAttacks = {
@@ -92,206 +110,117 @@ let poke3rdEvoDefense = {
 //--------------------------------------------------
 //  1st Evolution Pokedex
 
-let pokedex1stEvo = {
-    bulbasaur: {
-        type: ['grass', 'poison'],
-        weakness: ['fire', 'psychic', 'ice'],
-        },
-    charmander: {
-        type: 'fire',
-        weakness: ['water', 'ground', 'rock'],
-        },
-    squirtle: {
-        type: 'water',
-        weakness: ['grass', 'electric'],
-        },
-    caterpie: {
-        type: 'bug',
-        weakness: ['fire', 'flying', 'rock'],
-        },
-    weedle: {
-        type: ['bug', 'poison'],
-        weakness: ['fire', 'psychic', 'flying', 'rock'],
-        },
-    pidgey: {
-        type: ['normal', 'flying'],
-        weakness: ['electric', 'ice', 'rock'],
-        },
-    rattata: {
-        type: 'normal',
-        weakness: 'fighting',
-        },
-    spearow: {
-        type: ['normal', 'flying'],
-        weakness: ['electric', 'ice', 'rock'],
-        },
-    ekans: {
-        type: 'poison',
-        weakness: ['psychic', 'ground'],
-        },
-    pikachu: {
-        type: 'electric',
-        weakness: 'ground',
-        },
-    sandshrew: {
-        type: 'ground',
-        weakness: ['water', 'grass', 'ice'],
-        },
-    nidoranf: {
-        type: 'poison',
-        weakness: ['psychic', 'ground'],
-        },
-    nidoranm: {
-        type: 'poison',
-        weakness: ['psychic', 'ground'],
-        },
-    vulpix: {
-        type: 'fire',
-        weakness: ['water', 'ground', 'rock'],
-        }
-}
-//----------------------------------------------------------
+// let pokedex = {
+//     bulbasaur, ivysaur, venosaur: {
+//         type: ['grass', 'poison'],
+//         weakness: ['fire', 'psychic', 'ice'],
+//         },
+//     charmander, charmeleon, charizard: {
+//         type: 'fire',
+//         weakness: ['water', 'ground', 'rock'],
+//         },
+//     squirtle, wartortle, blastoise: {
+//         type: 'water',
+//         weakness: ['grass', 'electric'],
+//         },
+//     caterpie, metapod, butterfree: {
+//         type: 'bug',
+//         weakness: ['fire', 'flying', 'rock'],
+//         },
+//     weedle, kakuna, beedrill: {
+//         type: ['bug', 'poison'],
+//         weakness: ['fire', 'psychic', 'flying', 'rock'],
+//         },
+//     pidgey, pidgeotto, pidgeot: {
+//         type: ['normal', 'flying'],
+//         weakness: ['electric', 'ice', 'rock'],
+//         },
+//     rattata, raticate : {
+//         type: 'normal',
+//         weakness: 'fighting',
+//         },
+//     spearow, fearow: {
+//         type: ['normal', 'flying'],
+//         weakness: ['electric', 'ice', 'rock'],
+//         },
+//     ekans, arbok: {
+//         type: 'poison',
+//         weakness: ['psychic', 'ground'],
+//         },
+//     pikachu, raichu: {
+//         type: 'electric',
+//         weakness: 'ground',
+//         },
+//     sandshrew, sandslash: {
+//         type: 'ground',
+//         weakness: ['water', 'grass', 'ice'],
+//         },
+//     nidoranf, nidorina, nidoqueen: {
+//         type: 'poison',
+//         weakness: ['psychic', 'ground'],
+//         },
+//     nidoranm, nidorino, nidoking: {
+//         type: 'poison',
+//         weakness: ['psychic', 'ground'],
+//         },
+//     vulpix, nine: {
+//         type: 'fire',
+//         weakness: ['water', 'ground', 'rock'],
+//         }
+// }
 
-//  2nd Evolution Pokedex
-
-let pokedex2ndEvo = {
-        ivysaur: {
-            type: ['grass', 'poison'],
-            weakness: ['fire', 'psychic', 'ice'],
-            },
-        charmeleon: {
-            type: 'fire',
-            weakness: ['water', 'ground', 'rock'],
-            },
-        wartotle: {
-            type: 'water',
-            weakness: ['grass', 'electric'],
-            },
-        metapod: {
-            type: 'bug',
-            weakness: ['fire', 'flying', 'rock'],
-            },
-        kakuna: {
-            type: ['bug', 'poison'],
-            weakness: ['fire', 'psychic', 'flying', 'rock'],
-            },
-        pidgeotto: {
-            type: ['normal', 'flying'],
-            weakness: ['electric', 'ice', 'rock'],
-            },
-        raticate: {
-            type: 'normal',
-            weakness: 'fighting',
-            },
-        fearow: {
-            type: ['normal', 'flying'],
-            weakness: ['electric', 'ice', 'rock'],
-            },
-        arbok: {
-            type: 'poison',
-            weakness: ['psychic', 'ground'],
-            },
-        raichu: {
-            type: 'electric',
-            weakness: 'ground',
-            },
-        sandlash: {
-            type: 'ground',
-            weakness: ['water', 'grass', 'ice'],
-            },
-        nidorino: {
-            type: 'poison',
-            weakness: ['psychic', 'ground'],
-            },
-        nidorina: {
-            type: 'poison',
-            weakness: ['psychic', 'ground'],
-            },
-        ninetales: {
-            type: 'fire',
-            weakness: ['water', 'ground', 'rock'],
-            },
-}
-//------------------------------------------------------------------
-
-// 3rd Evolution Pokedex
-
-let pokedex3rdEvo = {
-            venusaur: {
-                type: ['grass', 'poison'],
-                weakness: ['fire', 'psychic', 'ice'],
-            },
-            charizard: {
-                type: 'fire',
-                weakness: ['water', 'ground', 'rock'],
-            },
-            blastoise: {
-                type: 'water',
-                weakness: ['grass', 'electric'],
-            },
-            butterfree: {
-                type: 'bug',
-                weakness: ['fire', 'flying', 'rock'],
-            },
-            beedrill: {
-                type: ['bug', 'poison'],
-                weakness: ['fire', 'psychic', 'flying', 'rock'],
-            },
-            pidgeot: {
-                type: ['normal', 'flying'],
-                weakness: ['electric', 'ice', 'rock'],
-            },
-            nidoking: {
-                type: 'poison',
-                weakness: ['psychic', 'ground'],
-            },
-            nidoqueen: {
-                type: 'poison',
-                weakness: ['psychic', 'ground'],
-            },
-}
 //--------------------------------------------------------------
 
 //  Evil Pokedex
 
 let evilPokedex = {
             marshadow: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/802.png'),
                 type: ['fighting', 'ghost'],
                 weakness: ['psychic', 'flying'],
             },
             mewtwo: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png'),
                 type: 'pyschic',
                 weakness: 'bug',
             },
             giratina: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/487.png'),
                 type: ['ghost', 'dragon'],
                 weakness: 'ice',
             },
             mimikyu: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/778.png'),
                 type: 'ghost',
                 weakness: 'psychic',
             },
             yveltal: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/717.png'),
                 type: 'flying',
                 weakness: ['electric', 'rock', 'ice'],
             },
             darkrai: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/491.png'),
                 type: 'ghost',
                 weakness: ['bug', 'fighting'],
             },
             spiritomb: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/442.png'),
                 type: 'ghost',
                 weakness: 'fire',
             },
             froslass: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/478.png'),
                 type: 'grass',
                 weakness: ['fire', 'psychic', 'ice'],
             },
             gourgeist: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/711.png'),
                 type: ['ghost', 'ice'],
                 weakness: ['fire', 'rock'],
             },
             drifloon: {
+                img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/425.png'),
                 type: ['ghost', 'flying'],
                 weakness: ['electric', 'rock', 'ice'],
             },
@@ -333,78 +262,79 @@ function reselect() {
                     Cookies.remove('nidoranm');
                 }else if (cookieArray[i] = userSelection14) {
                     Cookies.remove('vulpix');
-                } 
+                }
         }window.location.href='/index.html';
     }
 
+//  Displays pokemon chosen in header and scoreboard
 
-// Retrieve cookies from main page selection
-var userSelection1 = Cookies.get('bulbasaur');
-let userSelection2 = Cookies.get('charmander');
-let userSelection3 = Cookies.get('squirtle');
-let userSelection4 = Cookies.get('caterpie');
-let userSelection5 = Cookies.get('weedle');
-let userSelection6 = Cookies.get('pidgey');
-let userSelection7 = Cookies.get('rattata');
-let userSelection8 = Cookies.get('spearow');
-let userSelection9 = Cookies.get('ekans');
-let userSelection10 = Cookies.get('pikachu');
-let userSelection11 = Cookies.get('sandshrew');
-let userSelection12 = Cookies.get('nidoranf');
-let userSelection13 = Cookies.get('nidoranm');
-let userSelection14 = Cookies.get('vulpix');
-
-// // Create an array of those cookies
-var cookieArray = [userSelection1, userSelection2, userSelection3, userSelection4, userSelection5, userSelection6, userSelection7, userSelection8, userSelection9, userSelection10, userSelection11, userSelection12, userSelection13, userSelection14];
-let pokeName = document.getElementById('choiceName');
-//  Displays pokemon chosen
 for (let n = 0; n < cookieArray.length; n++) {
-        
+    let pokeName = document.getElementById('choiceName');
+    let scoreboardName = document.getElementById('user');
+
         if (cookieArray[n] = userSelection1) {
             pokeName.innerText='Bulbasaur';
+            scoreboardName.innerText='Bulbasaur';
             document.body.style.backgroundColor='#383838';
         } else if (cookieArray[n] = userSelection2) {
             pokeName.innerText='Charmander';
+            scoreboardName.innerText='Charmander';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection3) {
             pokeName.innerText='Squirtle';
+            scoreboardName.innerText='Squirtle';
             document.body.style.backgroundColor='#383838';
         } else if (cookieArray[n] = userSelection4) {
             pokeName.innerText='Caterpie';
+            scoreboardName.innerText='Caterpie';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection5) {
             pokeName.innerText='Weedle';
+            scoreboardName.innerText='Weedle';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection6) {
             pokeName.innerText='Pidgey';
+            scoreboardName.innerText='Pidgey';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection7) {
             pokeName.innerText='Rattata';
+            scoreboardName.innerText='Rattata';
             document.body.style.backgroundColor='#383838';
         } else if (cookieArray[n] = userSelection8) {
             pokeName.innerText='Spearow';
+            scoreboardName.innerText='Spearow';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection9) {
             pokeName.innerText='Ekans';
+            scoreboardName.innerText='Ekans';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection10) {
             pokeName.innerText='Pikachu';
+            scoreboardName.innerText='Pikachu';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection11) {
             pokeName.innerText='Sandshrew';
+            scoreboardName.innerText='Sandshrew';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection12) {
             pokeName.innerText='Nidoranf';
+            scoreboardName.innerText='Nidoranf';
             document.body.style.backgroundColor='#383838';
         }else if (cookieArray[n] = userSelection13) {
             pokeName.innerText='Nidoranm';
+            scoreboardName.innerText='Nidoranm';
             document.body.style.backgroundColor='#383838';
         } else if (cookieArray[n] = userSelection14) {
             pokeName.innerText='Vulpix';
+            scoreboardName.innerText='Vulpix';
             document.body.style.backgroundColor='#383838';
         }
     }
-// Enemy
+
+
+// Displays boss
+
+
 // let computerHealth = Hp;
 // let userCurrentHealth = userMaxHealth - oppAttackPoints;
 
@@ -427,11 +357,9 @@ for (let n = 0; n < cookieArray.length; n++) {
 // let damageLow = 25;
 // let damageHigh = 10;
 //
-let userHealth = 100;
-let oppHealth = 100;
-let oppHit = 15;
-let attack = 15;
-let oppDisplayHealth = document.getElementById('oppHP');
+let userHealth = 200;
+let oppHealth = 200;
+let oppDisplayHealth = document.getElementById('bossHP');
 let userDisplayHealth = document.getElementById('userHP');
 oppDisplayHealth.innerText=oppHealth;
 userDisplayHealth.innerText=userHealth;
@@ -440,10 +368,12 @@ userDisplayHealth.innerText=userHealth;
 // User health decreases
 // if the user health <= 0 computer wins
 // Otherwise user clicks attack and the whole thing happens again;
+
+
+
 function userAttack(){
 
-    oppHealth = (oppHealth - attack);
-    oppDisplayHealth.innerText=oppHealth;
+
 }
 
 function oppAttack(){
@@ -452,21 +382,49 @@ function oppAttack(){
     userDisplayHealth.innerText=userHealth;
 }
 
-function attack1(){
 
-    if (oppHealth != 0) {
-        userAttack();
-         // return attackStat();
+function attackOne(){
+    let hit = Math.floor(Math.random() * 10) + 1;
+    console.log(hit);
+    oppHealth = (oppHealth - hit);
+    oppDisplayHealth.innerText=oppHealth;
+};
 
-    } else {
-        console.log('Game Over')
-    }
-    if (userHealth != 0) {
-        oppAttack();
-    } else {
-        console.log('Game Over')
-    }
-}
+function attackTwo(){
+    let hit = Math.floor(Math.random() * 10) + 10;
+    console.log(hit);
+    oppHealth = (oppHealth - hit);
+    oppDisplayHealth.innerText=oppHealth;
+};
+function attackThree(){
+    let hit = Math.floor(Math.random() * 10) + 20;
+    console.log(hit);
+    oppHealth = (oppHealth - hit);
+    oppDisplayHealth.innerText=oppHealth;
+};
+function attackFour(){
+    let hit = Math.floor(Math.random() * 10) + 30;
+    console.log(hit);
+    oppHealth = (oppHealth - hit);
+    oppDisplayHealth.innerText=oppHealth;
+};
+
+
+// function attack1(){
+
+//     if (oppHealth != 0) {
+//         userAttack();
+//          // return attackStat();
+
+//     } else {
+//         console.log('Game Over')
+//     }
+//     if (userHealth != 0) {
+//         oppAttack();
+//     } else {
+//         console.log('Game Over')
+//     }
+// }
 // }  This feels like GhostWriter
 //lol yes
 // just find me on messenger if you

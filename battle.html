@@ -12,27 +12,27 @@
 <body>
     <header id="scoreboard">
         <h2>Get ready to battle <span><h1 id="choiceName"></h1></span> Your opponent is Mewtwo!</h2>
-        <h3 id="user">Charizard</h3><span id="userHP"></span><h3>:</h3><span id="oppHP"></span><h3>Mewtwo</h3>
+        <h3 id="user">Charizard</h3><span id="userHP"></span><h3>:</h3><span id="bossHP"></span><h3 id="boss">Mewtwo</h3>
     </header>
     <div id="selectionDiv">
         <div id="pokemonDiv">
             <h1></h1>
             <img id="pokeCard" src="" alt="">
             <h2 id="Hp"></h2>
-            <button id="attack1" onclick="attack1()">Attack 1</button>
-            <button id="attack2" onclick="attack2()">Attack 2</button>
-            <button id="attack1" onclick="attack3()">Attack 3</button>
-            <button id="attack2" onclick="attack4()">Attack 4</button>
+            <button id="attack1" onclick="attackOne()">Attack 1</button>
+            <button id="attack2" onclick="attackTwo()">Attack 2</button>
+            <button id="attack1" onclick="attackThree()">Attack 3</button>
+            <button id="attack2" onclick="attackFour()">Attack 4</button>
             <h3 id="status"></h3>
         </div>
-        <div id="enemy">
-            <h1>Mewtwo</h1>
-            <div id="enemyHp"></div>
+        <div id="bossCard">
+            <img src="" alt="">
+            <h1></h1>
         </div>
-
+    </div>
         <div id="cookieInfo">
             <h4>Select a new pokemon<button onclick="reselect()">CLICK</button></h4>
         </div>
-    </div>
+    
 </body>
 </html>
