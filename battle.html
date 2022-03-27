@@ -11,8 +11,8 @@
 </head>
 <body>
     <header id="scoreboard">
-        <h2>Get ready to battle <span><h1 id="choiceName"></h1></span> Your opponent is Mewtwo!</h2>
-        <h3 id="user">Charizard</h3><span id="userHP"></span><h3>:</h3><span id="bossHP"></span><h3 id="boss">Mewtwo</h3>
+        <h2><span><h1 id="choiceName"></h1></span>Get ready to battle! Your opponent is <span id="headerBoss"></span></h2>
+        <h3 id="scoreUser">Charizard</h3><span id="userHP"></span><h3>:</h3><span id="bossHP"></span><h3 id="scoreBoss">Mewtwo</h3>
     </header>
     <div id="selectionDiv">
         <div id="pokemonDiv">
@@ -25,9 +25,11 @@
             <button id="attack2" onclick="attackFour()">Attack 4</button>
             <h3 id="status"></h3>
         </div>
-        <div id="bossCard">
-            <img src="" alt="">
-            <h1></h1>
+        <div id="bossCardContainer">
+            <div id="bossCard">
+                <img id="bossImg" src="" alt="">
+                <h2 id="bossName"></h2>
+            </div>
         </div>
     </div>
         <div id="cookieInfo">
