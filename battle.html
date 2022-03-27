@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/battle.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="/battle.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="scoreboard">
+        <h2>Get ready to battle <span><h1 id="choiceName"></h1></span> Your opponent is Mewtwo!</h2>
+        <h3 id="user">Charizard</h3><span id="userHP"></span><h3>:</h3><span id="oppHP"></span><h3>Mewtwo</h3>
+    </div>
+    <div id="selectionDiv">
+        <div id="pokemonDiv">
+            <h1 id="choiceName"></h1>
+            <img id="pokeCard" src="" alt="">
+            <h2 id="Hp"></h2>
+            <button id="attack1" onclick="attack1()">Attack 1</button>
+            <!-- <button id="attack2" onclick="attack2">Attack 2</button> -->
+            <h3 id="status"></h3>
+        </div>
+        <div id="enemy">
+            <h1>Mewtwo</h1>
+            <div id="enemyHp"></div>
+        </div>
+
+        <div id="cookieInfo">
+            <h4>Select a new pokemon<button onclick="reselect()">CLICK</button></h4>
+        </div>
+    </div>
+</body>
+</html>
