@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/battle.css">
+    <link rel="stylesheet" href="/stylingPages/battle.css">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="/battle.js" defer></script>
-    <title>Document</title>
+    <script src="/js/battle.js" defer></script>
+    <title>Battle Raid || Pokemon Battle 2022</title>
 </head>
 <body>
-    <div id="scoreboard">
+    <header id="scoreboard">
         <h2>Get ready to battle <span><h1 id="choiceName"></h1></span> Your opponent is Mewtwo!</h2>
         <h3 id="user">Charizard</h3><span id="userHP"></span><h3>:</h3><span id="oppHP"></span><h3>Mewtwo</h3>
-    </div>
+    </header>
     <div id="selectionDiv">
         <div id="pokemonDiv">
-            <h1 id="choiceName"></h1>
+            <h1></h1>
             <img id="pokeCard" src="" alt="">
             <h2 id="Hp"></h2>
             <button id="attack1" onclick="attack1()">Attack 1</button>
-            <!-- <button id="attack2" onclick="attack2">Attack 2</button> -->
+            <button id="attack2" onclick="attack2()">Attack 2</button>
+            <button id="attack1" onclick="attack3()">Attack 3</button>
+            <button id="attack2" onclick="attack4()">Attack 4</button>
             <h3 id="status"></h3>
         </div>
         <div id="enemy">

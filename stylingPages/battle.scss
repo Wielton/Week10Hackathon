@@ -1,4 +1,5 @@
-@import 'buttons';
+@import 'partials/header';
+@import 'partials/buttons';
 
 * {
     padding: 0;
@@ -42,11 +43,5 @@ h2 {
 
 
 
-#cookieInfo {
-    background-color: #494949;
-    padding: 5%;
-}
 
-h4 {
-    text-align: left;
-}
+

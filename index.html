@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/stylingPages/style.css">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="/app.js" defer></script>
-    <title>Pokemon Battle!!</title>
+    <script src="/js/app.js" defer></script>
+    <title>Welcome To Pokemon Battle</title>
 </head>
 <body>
     <header>
         <h1>Welcome To Pokemon Battle!!</h1>
+        <h3>Choose your pokemon to begin the battle:</h3>
     </header>
-
-
-
-   
-    
-    <div id="itemsList" class="main-grid">
-        <div class="main-item">
-            <h2>Latios</h2>
-            <img src="https://www.serebii.net/xy/pokemon/381.png" alt="Cappuccino colour palette">
-            <a href="/battle.html"><button id="selectbtn1" onclick="pokeSelection1()" value="item1">SELECT</button></a>
-        </div>
-        <div class="main-item">
-            <h2>Charizard</h2>
-            <img src="https://www.serebii.net/xy/pokemon/059.png" alt="Pastel Rainbow colour palette">
-            <a href="/battle.html"><button id="selectbtn2" onclick="pokeSelection2()" value="item2">SELECT</button></a>
-        </div>
-        <div class="main-item">
-            <h2>Pikachu</h2>
-            <img src="https://www.serebii.net/sunmoon/pokemon/025.png" alt="Pastel Rainbow colour palette">
-            <a href="/battle.html"><button id="selectbtn3" onclick="pokeSelection3()" value="item3">SELECT</button></a>
-        </div>
+    <div id="pokeCardContainer" class="main-grid">
+        <a href="/battle.html" id="bulbasaur" class="pokeCard" onclick="bulbasaur()" value="bulbasaur">
+            <h2>Bulbasaur</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur">
+        </a>
+        <a href="/battle.html" id="charmander" class="pokeCard" onclick="charmander()" value="charmander">
+            <h2 class="pokeCardName">Charmander</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" alt="Charmander">
+        </a>
+        <a href="/battle.html" id="squirtle" class="pokeCard" onclick="squirtle()" value="squirtle">
+            <h2 class="pokeCardName">Squirtle</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="Squirtle">
+        </a>
+        <a href="/battle.html" id="caterpie" class="pokeCard" onclick="caterpie()" value="caterpie">
+            <h2 class="pokeCardName">Caterpie</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png" alt="Caterpie">
+        </a>
+        <a href="/battle.html" id="weedle" class="pokeCard" onclick="weedle()" value="weedle">
+            <h2 class="pokeCardName">Weedle</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png" alt="Weedle">
+        </a>
+        <a href="/battle.html" id="pidgey" class="pokeCard" onclick="pidgey()" value="pidgey">
+            <h2 class="pokeCardName">Pidgey</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png" alt="Pidgey">
+        </a>
+        <a href="/battle.html" id="rattata" class="pokeCard" onclick="rattata()" value="rattata">
+            <h2 class="pokeCardName">Rattata</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png" alt="Rattata">
+        </a>
+        <a href="/battle.html" id="spearow" class="pokeCard" onclick="spearow()" value="spearow">
+            <h2 class="pokeCardName">Spearow</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png" alt="Spearow">
+        </a>
+        <a href="/battle.html" id="ekans" class="pokeCard" onclick="ekans()" value="ekans">
+            <h2 class="pokeCardName">Ekans</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png" alt="Ekans">
+        </a>
+        <a href="/battle.html" id="pikachu" class="pokeCard" onclick="pikachu()" value="pikachu">
+            <h2 class="pokeCardName">Pikachu</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png" alt="Pikachu">
+        </a>
+        <a href="/battle.html" id="sandshrew" class="pokeCard" onclick="sandshrew()" value="sandshrew">
+            <h2 class="pokeCardName">Sandshrew</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png" alt="Sandshrew">
+        </a>
+        <a href="/battle.html" id="nidoranf" class="pokeCard" onclick="nidoranf()" value="nidoranf">
+            <h2 class="pokeCardName">Nidoran</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/029.png" alt="Nidoran - female">
+        </a>
+        <a href="/battle.html" id="nidoranm" class="pokeCard" onclick="nidoranm()" value="nidoranm">
+            <h2 class="pokeCardName">Nidoran</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/032.png" alt="Nidoran - male">
+        </a>
+        <a href="/battle.html" id="vulpix" class="pokeCard" onclick="vulpix()" value="vulpix">
+            <h2 class="pokeCardName">Vulpix</h2>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png" alt="Vulpix">
+        </a>
     </div>
 </body>
 

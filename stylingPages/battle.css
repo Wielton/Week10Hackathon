@@ -1,3 +1,14 @@
+header {
+  background-color: #505050;
+  height: 75px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h1 {
+  color: #faefe2;
+}
+
 button {
   color: #505050;
   width: 75px;
@@ -66,14 +77,5 @@ h2 {
   height: auto;
   padding: 5%;
   text-align: center;
-}
-
-#cookieInfo {
-  background-color: #494949;
-  padding: 5%;
-}
-
-h4 {
-  text-align: left;
 }
 /*# sourceMappingURL=battle.css.map */
