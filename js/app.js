@@ -1,4 +1,27 @@
-
+//  I tried this function but it gave me all the cookies upon page load
+//  whereas giving each pokemon its own function only creates that cookie.
+//  I will tackle this after the scoring is complete
+// function setCookie(name) {
+//     var item = document.getElementById(name);
+//     Cookies.set(name, item);
+// }
+// const pokemon = [
+//     'bulbasaur',
+//     'charmander',
+//     'squirtle',
+//     'caterpie',
+//     'weedle',
+//     'pidgey',
+//     'rattata',
+//     'spearow',
+//     'ekans',
+//     'pikachu',
+//     'sandshrew',
+//     'nidoranf',
+//     'nidoranm',
+//     'vulpix'
+// ]
+// pokemon.forEach(pokemon => setCookie(pokemon));
 
 function bulbasaur() {
     var item = document.getElementById('bulbasaur');

@@ -4,17 +4,61 @@ header {
 }
 
 h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / 8;
   color: #faefe2;
 }
 
+#scoreboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (1fr)[5] 2fr;
+      grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+  justify-items: center;
+}
+
+#scoreUser {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#scoreBoss {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7 / 8;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#userHP {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-size: 3rem;
+}
+
+#bossHP {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  font-size: 3rem;
+}
+
 button {
-  color: #505050;
+  color: #faefe2;
   width: 75px;
   height: 30px;
   border: none;
   border-radius: 15px;
   font-size: 1em;
   font-weight: 550;
+  background-color: rgba(194, 80, 80, 0.849);
   opacity: 0.6;
   -webkit-transition: 0.3s;
   transition: 0.3s;

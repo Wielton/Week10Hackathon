@@ -109,96 +109,189 @@ let poke3rdEvoDefense = {
 };
 //--------------------------------------------------
 //  Pokedex with evolutions for future features:
-
+//  need to finish adding in 2nd and 3rd evo images
 let pokedex = {
     bulbasaur: {
-        evoOne: 'Bulbasaur',
-        evoTwo: 'Ivysaur',
-        evoThree: 'Venosaur',
+        evoOne: {
+            name: 'Bulbasaur',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png')
+            },
+        evoTwo: {
+            name: 'Ivysaur',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png')
+            },
+        evoThree: {
+            name: 'Venusaur',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png')
+            },
         type: ['grass', 'poison'],
         weakness: ['fire', 'psychic', 'ice'],
         },
     charmander: {
-        evoOne: 'Charmander',
-        evoTwo: 'Charmeleom',
-        evoThree: 'Charizard',
+        evoOne: {
+            name: 'Charmander',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png')
+            },
+        evoTwo: {
+            name: 'Charmeleom',
+            img: ('')
+            },
+        evoThree: {
+            name: 'Charizard',
+            img: ('')
+            },
         type: 'fire',
         weakness: ['water', 'ground', 'rock'],
         },
     squirtle: {
-        evoOne: 'Squirtle',
-        evoTwo: 'Wartortle',
-        evoThree: 'Blastoise',
+        evoOne: {
+            name: 'Squirtle',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png')
+            },
+        evoTwo: {
+            name: 'Wartortle',
+            img: ('')
+            },
+        evoThree: {
+            name: 'Blastoise',
+            img: ('')
+            },
         type: 'water',
         weakness: ['grass', 'electric'],
         },
     caterpie: {
-        evoOne: 'Caterpie',
-        evoTwo: 'Metapod',
-        evoThree: 'Butterfree',
+        evoOne: {
+            name: 'Caterpie',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png')
+            },
+        evoTwo: {
+            name: 'Metapod',
+            img: ('')
+            },
+        evoThree: {
+            name: 'Butterfree',
+            img: (''),
+            },
         type: 'bug',
         weakness: ['fire', 'flying', 'rock'],
         },
     weedle: {
-        evoOne: 'Weedle',
-        evoTwo: 'Kakuna',
-        evoThree: 'Beedrill',
+        evoOne: {
+            name: 'Weedle',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png')
+            },
+        evoTwo: {
+            name: 'Kakuna',
+            img: ('')
+            },
+        evoThree: {
+            name: 'Beedrill',
+            img: ('')
+            },
         type: ['bug', 'poison'],
         weakness: ['fire', 'psychic', 'flying', 'rock'],
         },
     pidgey: {
-        evoOne: 'Pidgey',
-        evoTwo: 'Pidgeotto',
-        evoThree: 'Pidgeot',
+        evoOne: {
+            name: 'Pidgey',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png')
+            },
+        evoTwo: {
+            name: 'Pidgeotto',
+            img: ('')
+            },
+        evoThree: {
+            name: 'Pidgeot',
+            img: ('')
+            },
         type: ['normal', 'flying'],
         weakness: ['electric', 'ice', 'rock'],
         },
     rattata: {
-        evoOne: 'Rattata',
-        evoTwo: 'Raticate',
+        evoOne: {
+            name: 'Rattata',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png')
+            },
+        evoTwo: {
+            name: 'Raticate',
+            img: ('')
+            },
         type: 'normal',
         weakness: 'fighting',
         },
     spearow: {
-        evoOne: 'Spearow',
-        evoTwo: 'Fearow',
+        evoOne: {
+            name: 'Spearow',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png')
+            },
+        evoTwo: {
+            name: 'Fearow',
+            img: ('')
+            },
         type: ['normal', 'flying'],
         weakness: ['electric', 'ice', 'rock'],
         },
     ekans: {
-        evoOne: 'Ekans',
-        evoTwo: 'Arbok',
+        evoOne: {
+            name: 'Ekans',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png')
+            },
+        evoTwo: {
+            name: 'Arbok',
+            img: ('')
+            },
         type: 'poison',
         weakness: ['psychic', 'ground'],
         },
     pikachu: {
-        evoOne: 'Pikachu',
-        evoTwo: 'Raichu',
+        evoOne: {
+            name: 'Pikachu',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png')
+            },
+        evoTwo: {
+            name: 'Raichu',
+            img: ('')
+            },
         type: 'electric',
         weakness: 'ground',
         },
     sandshrew: {
-        evoOne: 'Sandshrew',
-        evoTwo: 'Sandslash',
+        evoOne: {
+            name: 'Sandshrew',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png')
+            },
+        evoTwo: {
+            name: 'Sandslash',
+            img: ('')
+            },
         type: 'ground',
         weakness: ['water', 'grass', 'ice'],
         },
     nidoranf: {
-        evoOne: 'Nidoran',
+        evoOne: {
+            name: 'Nidoran',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/029.png')
+            },
         evoTwo: 'Nidorina',
         evoThree: 'Nidoqueen',
         type: 'poison',
         weakness: ['psychic', 'ground'],
         },
     nidoranm: {
-        evoOne: 'Nidoran',
+        evoOne: {
+            name: 'Nidoran',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/032.png')
+            },
         evoTwo: 'Nidorino',
         evoThree: 'Nidoking',
         type: 'poison',
         weakness: ['psychic', 'ground'],
         },
     vulpix: {
-        evoOne: 'Vulpix',
+        evoOne: {
+            name: 'Vulpix',
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png')
+            },
         evoTwo: 'Ninetales',
         type: 'fire',
         weakness: ['water', 'ground', 'rock'],
@@ -283,99 +376,118 @@ const boss = evilPokedex[randomBoss];
 function reselect() {
     //  Cookies.remove(userSelection);
         for (let i = 0; i < cookieArray.length; i++) {
-            if (cookieArray[i] = userSelection1) {
+            if (userSelection1) {
                 Cookies.remove('bulbasaur');
-                } else if (cookieArray[i] = userSelection2) {
+                } else if (userSelection2) {
                 Cookies.remove('charmander');
-                } else if (cookieArray[i] = userSelection3) {
+                } else if (userSelection3) {
                 Cookies.remove('squirtle');
-                }else if (cookieArray[i] = userSelection4) {
+                }else if (userSelection4) {
                     Cookies.remove('caterpie');
-                } else if (cookieArray[i] = userSelection5) {
+                } else if (userSelection5) {
                     Cookies.remove('weedle');
-                }else if (cookieArray[i] = userSelection6) {
+                }else if (userSelection6) {
                     Cookies.remove('pidgey');
-                } else if (cookieArray[i] = userSelection7) {
+                } else if (userSelection7) {
                     Cookies.remove('rattata');
-                }else if (cookieArray[i] = userSelection8) {
+                }else if (userSelection8) {
                     Cookies.remove('spearow');
-                } else if (cookieArray[i] = userSelection9) {
+                } else if (userSelection9) {
                     Cookies.remove('ekans');
-                }else if (cookieArray[i] = userSelection10) {
+                }else if (userSelection10) {
                     Cookies.remove('pikachu');
-                } else if (cookieArray[i] = userSelection11) {
+                } else if (userSelection11) {
                     Cookies.remove('sandshrew');
-                }else if (cookieArray[i] = userSelection12) {
+                }else if (userSelection12) {
                     Cookies.remove('nidoranf');
-                } else if (cookieArray[i] = userSelection13) {
+                } else if (userSelection13) {
                     Cookies.remove('nidoranm');
-                }else if (cookieArray[i] = userSelection14) {
+                }else if (userSelection14) {
                     Cookies.remove('vulpix');
                 }
         }window.location.href='/index.html';
     }
 
 //  Displays pokemon chosen in header and scoreboard
+/*
+document.getElementById('choiceName','scoreUser','pokeCard')
+function pokeDisplay(){
 
+}
+*/
 for (let i = 0; i < cookieArray.length; i++) {
     let pokeName = document.getElementById('choiceName');
     let scoreboardName = document.getElementById('scoreUser');
-
+    let pokeCardImg = document.getElementById('pokeCard');
         if (userSelection1) {
             pokeName.innerText='Bulbasaur';
             scoreboardName.innerText='Bulbasaur';
+            pokeCardImg.setAttribute('src', pokedex.bulbasaur.evoOne.img);
             document.body.style.backgroundColor='#383838';
         } else if (userSelection2) {
             pokeName.innerText='Charmander';
             scoreboardName.innerText='Charmander';
+            pokeCardImg.setAttribute('src', pokedex.charmander.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection3) {
             pokeName.innerText='Squirtle';
             scoreboardName.innerText='Squirtle';
+            pokeCardImg.setAttribute('src', pokedex.squirtle.evoOne.img);
             document.body.style.backgroundColor='#383838';
         } else if (userSelection4) {
             pokeName.innerText='Caterpie';
             scoreboardName.innerText='Caterpie';
+            pokeCardImg.setAttribute('src', pokedex.caterpie.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection5) {
             pokeName.innerText='Weedle';
             scoreboardName.innerText='Weedle';
+            pokeCardImg.setAttribute('src', pokedex.weedle.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection6) {
             pokeName.innerText='Pidgey';
             scoreboardName.innerText='Pidgey';
+            pokeCardImg.setAttribute('src', pokedex.pidgey.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection7) {
             pokeName.innerText='Rattata';
             scoreboardName.innerText='Rattata';
+            pokeCardImg.setAttribute('src', pokedex.rattata.evoOne.img);
             document.body.style.backgroundColor='#383838';
         } else if (userSelection8) {
             pokeName.innerText='Spearow';
             scoreboardName.innerText='Spearow';
+            pokeCardImg.setAttribute('src', pokedex.spearow.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection9) {
             pokeName.innerText='Ekans';
             scoreboardName.innerText='Ekans';
+            pokeCardImg.setAttribute('src', pokedex.ekans.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection10) {
             pokeName.innerText='Pikachu';
             scoreboardName.innerText='Pikachu';
+            pokeCardImg.setAttribute('src', pokedex.pikachu.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection11) {
             pokeName.innerText='Sandshrew';
             scoreboardName.innerText='Sandshrew';
+            pokeCardImg.setAttribute('src', pokedex.sandshrew.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection12) {
             pokeName.innerText='Nidoranf';
             scoreboardName.innerText='Nidoranf';
+            pokeCardImg.setAttribute('src', pokedex.nidoranf.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }else if (userSelection13) {
             pokeName.innerText='Nidoranm';
             scoreboardName.innerText='Nidoranm';
+            pokeCardImg.setAttribute('src', pokedex.nidoranm.evoOne.img);
             document.body.style.backgroundColor='#383838';
         } else if (userSelection14) {
             pokeName.innerText='Vulpix';
             scoreboardName.innerText='Vulpix';
+            pokeCardImg.setAttribute('src', pokedex.vulpix.evoOne.img);
             document.body.style.backgroundColor='#383838';
         }
 }
@@ -383,7 +495,7 @@ for (let i = 0; i < cookieArray.length; i++) {
 
 
 // Displays boss
-document.getElementById('bossCardContainer', 'scoreBoss', 'headerBoss').addEventListener("load", bossDisplay());
+document.getElementById('bossDiv', 'scoreBoss', 'headerBoss').addEventListener("load", bossDisplay());
 function bossDisplay(){
     //let boss = document.getElementById('bossCard');
     let bossImg = document.getElementById('bossImg');
@@ -395,41 +507,8 @@ function bossDisplay(){
     bossScore.innerText=boss.name;
     bossHeader.innerText=boss.name;
     }
-    
-
-
-// for (let i = 0; i < evilPokedex.length; i++){
-//     let bossImages = document.getElementById('bossCard').querySelector('img');
-//     if (evilPokedex[0]){
-//         bossImages.setAttribute("src", "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/802.png");
-//     }console.log(bossImages[0]);
-// }
-
-
-// document.getElementsByClassName('pokeCard').addEventListener('click', function(){
-
-//     document.getElementById('bossCard').querySelector('img').setAttribute('src', )
-// })
-
-
-// let computerHealth = Hp;
+    // let computerHealth = Hp;
 // let userCurrentHealth = userMaxHealth - oppAttackPoints;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // let attackHigh = 30;
 // let damageLow = 25;
 // let damageHigh = 10;
@@ -448,43 +527,90 @@ userDisplayHealth.innerText=userHealth;
 
 
 
-function userAttack(){
 
 
+
+
+
+function oppAttackOne(){
+    healthCheck();
+    let hit = Math.floor(Math.random() * 10) + 1;
+    console.log(hit);
+    userHealth = (userHealth - hit);
+    userDisplayHealth.innerText=userHealth;
+    
 }
-
-function oppAttack(){
-
-    userHealth = (userHealth - oppHit);
+function oppAttackTwo(){
+    healthCheck();
+    let hit = Math.floor(Math.random() * 10) + 10;
+    console.log(hit);
+    userHealth = (userHealth - hit);
+    userDisplayHealth.innerText=userHealth;
+}
+function oppAttackThree(){
+    healthCheck();
+    let hit = Math.floor(Math.random() * 10) + 20;
+    console.log(hit);
+    userHealth = (userHealth - hit);
+    userDisplayHealth.innerText=userHealth;
+}
+function oppAttackFour(){
+    healthCheck();
+    let hit = Math.floor(Math.random() * 10) + 30;
+    console.log(hit);
+    userHealth = (userHealth - hit);
     userDisplayHealth.innerText=userHealth;
 }
 
-
 function attackOne(){
+    healthCheck();
     let hit = Math.floor(Math.random() * 10) + 1;
     console.log(hit);
+    
     oppHealth = (oppHealth - hit);
     oppDisplayHealth.innerText=oppHealth;
-};
+    oppAttackOne();
+    healthCheck();
+}
 
 function attackTwo(){
+    healthCheck();
     let hit = Math.floor(Math.random() * 10) + 10;
     console.log(hit);
     oppHealth = (oppHealth - hit);
     oppDisplayHealth.innerText=oppHealth;
-};
+    oppAttackTwo();
+    healthCheck();
+}
 function attackThree(){
+    healthCheck();
     let hit = Math.floor(Math.random() * 10) + 20;
     console.log(hit);
     oppHealth = (oppHealth - hit);
     oppDisplayHealth.innerText=oppHealth;
-};
+    oppAttackThree();
+    healthCheck();
+}
 function attackFour(){
+    healthCheck();
     let hit = Math.floor(Math.random() * 10) + 30;
     console.log(hit);
     oppHealth = (oppHealth - hit);
     oppDisplayHealth.innerText=oppHealth;
-};
+    oppAttackFour();
+    healthCheck();
+}
+function healthCheck(){
+    let status = document.getElementById('gameStatus');
+    if (oppHealth <= 0){
+        status.innerText='You Win!';
+    }else if (oppHealth >= 1){
+        status.innerText='Attack!';
+    }else if (userHealth <= 0){
+        status.innerText='Sorry, you lost!';
+    }
+}
+
 
 
 // function attack1(){

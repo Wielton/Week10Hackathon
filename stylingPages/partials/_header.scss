@@ -3,5 +3,28 @@ header {
     text-align: center;
 }
 h1 {
+    grid-column: 1 / 8;
     color: rgb(250, 239, 226);
+}
+#scoreboard {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+    justify-items: center;
+    
+}
+#scoreUser {
+    grid-column: 1 / 2;
+    align-self: center;
+}
+#scoreBoss {
+    grid-column: 7 / 8;
+    align-self: center;
+}
+#userHP {
+    grid-column: 3 / 4;
+    font-size: 3rem;
+}
+#bossHP {
+    grid-column: 5 / 6;
+    font-size: 3rem;
 }

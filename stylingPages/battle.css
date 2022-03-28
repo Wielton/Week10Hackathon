@@ -4,17 +4,61 @@ header {
 }
 
 h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / 8;
   color: #faefe2;
 }
 
+#scoreboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (1fr)[5] 2fr;
+      grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+  justify-items: center;
+}
+
+#scoreUser {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#scoreBoss {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7 / 8;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#userHP {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-size: 3rem;
+}
+
+#bossHP {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  font-size: 3rem;
+}
+
 button {
-  color: #505050;
+  color: #faefe2;
   width: 75px;
   height: 30px;
   border: none;
   border-radius: 15px;
   font-size: 1em;
   font-weight: 550;
+  background-color: rgba(194, 80, 80, 0.849);
   opacity: 0.6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -51,13 +95,6 @@ body {
   background-size: cover;
 }
 
-#scoreboard {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr (1fr)[5] 2fr;
-      grid-template-columns: 2fr repeat(5, 1fr) 2fr;
-}
-
 h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
@@ -71,9 +108,44 @@ h2 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: auto;
-  padding: 5%;
+}
+
+#pokemonDiv, #bossDiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 400px 50px;
+      grid-template-rows: 400px 50px;
+}
+
+#bossImg {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 400px;
+}
+
+#pokeCard {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 400px;
+}
+
+#bossNameDiv {
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attackbtns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  height: 50px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: all;
 }
 /*# sourceMappingURL=battle.css.map */
