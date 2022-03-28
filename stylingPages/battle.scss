@@ -19,38 +19,48 @@ body {
     height: 100%;
     overflow-x: hidden;
     align-items: center;
-    background-position: center;
+    background-image: url('https://cutewallpaper.org/21/pokemon-gym-background/Pokemon-XY-Battle-Backgrounds-for-Pokemon-Showdown-Beach-.png');
     background-size: cover;
+    padding: 1%;
 }
 
-h2 {
+#welcome {
     grid-column: 1 / 8;
     color: rgb(250, 239, 226);
     
-    background-color: #494949;
+    background-color: #505050;
 }
 #selectionDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
     
-    
-}
+    }
 #pokemonDiv, #bossDiv {
     display: grid;
     grid-template-rows: 400px 50px;
+    padding: 5%;
 }
 #bossImg {
     justify-self: center;
-    width: 400px;
+    align-self: end;
+    width: 350px;
 }
 #pokeCard {
     justify-self: center;
-    width: 400px;
+    align-self: end;
+    width: 275px;
 }
 #bossNameDiv {
     text-align: center;
     align-items: center;
+    #bossName {
+        background: none;
+        color: #505050;
+        font-size: 3em;
+        
+    }
 }
+
 .attackbtns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

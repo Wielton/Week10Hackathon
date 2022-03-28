@@ -130,8 +130,9 @@ let pokedex = {
     charmander: {
         evoOne: {
             name: 'Charmander',
-            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png')
-            },
+            img: ('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png'),
+            
+        },
         evoTwo: {
             name: 'Charmeleom',
             img: ('')
@@ -494,7 +495,7 @@ for (let i = 0; i < cookieArray.length; i++) {
 
 
 
-// Displays boss
+// Displays boss and battle gym
 document.getElementById('bossDiv', 'scoreBoss', 'headerBoss').addEventListener("load", bossDisplay());
 function bossDisplay(){
     //let boss = document.getElementById('bossCard');
@@ -506,6 +507,7 @@ function bossDisplay(){
     bossName.innerText=boss.name;
     bossScore.innerText=boss.name;
     bossHeader.innerText=boss.name;
+    
     }
     // let computerHealth = Hp;
 // let userCurrentHealth = userMaxHealth - oppAttackPoints;
@@ -513,12 +515,14 @@ function bossDisplay(){
 // let damageLow = 25;
 // let damageHigh = 10;
 //
-let userHealth = 200;
-let oppHealth = 200;
+let userHealth = 150;
+let oppHealth = 150;
 let oppDisplayHealth = document.getElementById('bossHP');
 let userDisplayHealth = document.getElementById('userHP');
+
 oppDisplayHealth.innerText=oppHealth;
 userDisplayHealth.innerText=userHealth;
+
 // if the computer health is <= 0 user wins
 // Otherwise the computer player attacks
 // User health decreases

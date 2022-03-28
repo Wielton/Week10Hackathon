@@ -1,11 +1,13 @@
 header {
     background-color: #505050;
     text-align: center;
+    color: rgba(250, 239, 226, 0.884);
 }
 h1 {
     grid-column: 1 / 8;
-    color: rgb(250, 239, 226);
+    
 }
+
 #scoreboard {
     display: grid;
     grid-template-columns: 2fr repeat(5, 1fr) 2fr;
@@ -15,16 +17,29 @@ h1 {
 #scoreUser {
     grid-column: 1 / 2;
     align-self: center;
+    font-size: 1.5em;
+    
 }
 #scoreBoss {
     grid-column: 7 / 8;
     align-self: center;
+    font-size: 1.5em;
+    
 }
 #userHP {
     grid-column: 3 / 4;
     font-size: 3rem;
+    color: rgba(255, 83, 60, 0.562);
+    
+    
 }
 #bossHP {
     grid-column: 5 / 6;
     font-size: 3rem;
+    color: rgba(255, 83, 60, 0.562);
+    
+}
+#gameStatus {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
 }
