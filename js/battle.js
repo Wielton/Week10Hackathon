@@ -371,13 +371,18 @@ const randomBoss = keys[Math.floor(Math.random() * keys.length)];
 const boss = evilPokedex[randomBoss];
 
 
-// Functions
+
+// Function
+
 
 //  Reselect Pokemon and remove the cookie
 function reselect() {
-    //  Cookies.remove(userSelection);
+    
+        Cookies.remove(boss.name, boss.type);
+        Cookies.remove(userHealth);
+        Cookies.remove(oppHealth);
         for (let i = 0; i < cookieArray.length; i++) {
-            if (userSelection1) {
+            if (cookieArray[i]) {
                 Cookies.remove('bulbasaur');
                 } else if (userSelection2) {
                 Cookies.remove('charmander');
@@ -496,7 +501,7 @@ for (let i = 0; i < cookieArray.length; i++) {
 
 
 // Displays boss and battle gym
-document.getElementById('bossDiv', 'scoreBoss', 'headerBoss').addEventListener("load", bossDisplay());
+document.getElementById('bossDiv', 'scoreBoss', 'headerBoss', 'bossHP', 'userHP').addEventListener("load", bossDisplay());
 function bossDisplay(){
     //let boss = document.getElementById('bossCard');
     let bossImg = document.getElementById('bossImg');
@@ -507,8 +512,10 @@ function bossDisplay(){
     bossName.innerText=boss.name;
     bossScore.innerText=boss.name;
     bossHeader.innerText=boss.name;
+    Cookies.set(boss.name, boss.type);
     
     }
+    
     // let computerHealth = Hp;
 // let userCurrentHealth = userMaxHealth - oppAttackPoints;
 // let attackHigh = 30;
@@ -608,11 +615,13 @@ function healthCheck(){
     let status = document.getElementById('gameStatus');
     if (oppHealth <= 0){
         status.innerText='You Win!';
-    }else if (oppHealth >= 1){
+    }else if (oppHealth >= 1 && userHealth >= 1){
         status.innerText='Attack!';
-    }else if (userHealth <= 0){
+    }else {
         status.innerText='Sorry, you lost!';
+
     }
+    
 }
 
 
@@ -632,14 +641,7 @@ function healthCheck(){
 //         console.log('Game Over')
 //     }
 // }
-// }  This feels like GhostWriter
-//lol yes
-// just find me on messenger if you
-
-// kyle and I have worked together sometimes thru that
-// ok we can make a group chat if Jolade has messenger?
-// I am samantha ellen on there
-// sent a message
+// }
 // let oppNewHealth = (oppCurrentHealth - attackLow);
 //         oppDisplayHealth.innerText=oppNewHealth;
 //         console.log(oppNewHealth);
